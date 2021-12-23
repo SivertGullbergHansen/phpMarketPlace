@@ -1,8 +1,8 @@
 <div align='center'>
-  [![GitHub issues](https://img.shields.io/github/issues/SivertGullbergHansen/phpMarketPlace)](https://github.com/SivertGullbergHansen/phpMarketPlace/issues)
-  [![GitHub forks](https://img.shields.io/github/forks/SivertGullbergHansen/phpMarketPlace)](https://github.com/SivertGullbergHansen/phpMarketPlace/network)
-  [![GitHub stars](https://img.shields.io/github/stars/SivertGullbergHansen/phpMarketPlace)](https://github.com/SivertGullbergHansen/phpMarketPlace/stargazers)
-  [![GitHub license](https://img.shields.io/github/license/SivertGullbergHansen/phpMarketPlace)](https://github.com/SivertGullbergHansen/phpMarketPlace)
+  <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/SivertGullbergHansen/phpMarketPlace"></a>
+  <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/SivertGullbergHansen/phpMarketPlace"></a>
+  <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SivertGullbergHansen/phpMarketPlace"></a>
+  <a href="https://github.com/SivertGullbergHansen/phpMarketPlace"><img alt="GitHub license" src="https://img.shields.io/github/license/SivertGullbergHansen/phpMarketPlace"></a>
   <br/>
   <h1>Php Marketplace</h1>  
   <h2>PHP + MYSQL</h2>
