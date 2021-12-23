@@ -36,5 +36,5 @@
   <br/>
   
   <h2>Colours</h2>
-  <img src='https://via.placeholder.com/15/1b1c21/000000?text=+'><p>1b1c21</p>
+  <p><img src='https://via.placeholder.com/15/1b1c21/000000?text=+'>1b1c21</p>
 </div>
