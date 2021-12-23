@@ -30,6 +30,8 @@
     <li>Purchase item</li>
     <li>Sell item</li>
     <li>View inventory</li>
+    <li>Manage account</li>
+    <li>Change password</li>
     <li>Search function</li>
   </ul>
   <br/>
