@@ -42,11 +42,20 @@
   <li><img src='https://via.placeholder.com/15/1b1c21/000000?text=+'> 1b1c21</li>
     </ul>
       </li>
-  <p>Accent</p>
-  <p><img src='https://via.placeholder.com/15/fefefe/000000?text=+'> fefefe</p>
-  <p>Buttons</p>
-  <p><img src='https://via.placeholder.com/15/3c51fa/000000?text=+'> 3c51fa</p>
-  <p>Currency</p>
-  <p><img src='https://via.placeholder.com/15/ffd700/000000?text=+'> ffd700</p>
+  <li>Accent
+    <ul>
+  <li><img src='https://via.placeholder.com/15/fefefe/000000?text=+'> fefefe</li>
+    </ul>
+      </li>
+  <li>Buttons
+    <ul>
+  <li><img src='https://via.placeholder.com/15/3c51fa/000000?text=+'> 3c51fa</li>
+    </ul>
+      </li>
+  <li>Currency
+    <ul>
+  <li><img src='https://via.placeholder.com/15/ffd700/000000?text=+'> ffd700</li>
+    </ul>
+      </li>
   </ul>
 </div>
