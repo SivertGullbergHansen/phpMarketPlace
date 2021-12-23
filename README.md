@@ -8,11 +8,12 @@
   <h2>PHP + MYSQL</h2>
   <img src="img/preview/screenshot1.png" alt="A screenshot preview of this project's browse-page">
   <br/>
-  <h3>Description</h3>
-  <p>This is a project written in pure PHP. No external libraries were used.</p>
 </div>
 
 <div align='left'>
+  <h2>Description</h3>
+  <p>This is a project written in pure PHP. No external libraries were used.</p>
+  <br/>
   <h2>Features</h2>
   <ul>
     <li>Login :white_check_mark:</li>
