@@ -71,7 +71,7 @@ class User extends Database
             $_SESSION['sessionHash'] = $sessionHash;
 
             mysqli_query($connection, "UPDATE users SET session_hash = '$sessionHash' WHERE username = '$this->username'");
-            header('Location: index.php');
+            header('Location: browse.php');
         } else {
             echo 'Failed';
         }
