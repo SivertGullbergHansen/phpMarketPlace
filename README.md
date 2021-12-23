@@ -4,16 +4,18 @@
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SivertGullbergHansen/phpMarketPlace"></a>
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace"><img alt="GitHub license" src="https://img.shields.io/github/license/SivertGullbergHansen/phpMarketPlace"></a>
   <br/>
+  
   <h1>:dollar:Php Marketplace:dollar:</h1>  
   <h2>PHP + MYSQL</h2>
   <img src="img/preview/screenshot1.png" alt="A screenshot preview of this project's browse-page">
-  <br/>
 </div>
+<br/>
 
 <div align='left'>
   <h2>Description</h3>
   <p>This is a project written in pure PHP. No external libraries were used.</p>
   <br/>
+  
   <h2>Features</h2>
   <ul>
     <li>Login :white_check_mark:</li>
@@ -25,6 +27,7 @@
     <li>Search function</li>
   </ul>
   <br/>
+  
   <h2>Requirements</h1>
   <ol>
     <li>Apache Server</li>
