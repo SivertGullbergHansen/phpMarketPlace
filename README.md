@@ -36,5 +36,13 @@
   <br/>
   
   <h2>Colours</h2>
-  <p><img src='https://via.placeholder.com/15/1b1c21/000000?text=+'>1b1c21</p>
+  <p>Background</p>
+  <p><img src='https://via.placeholder.com/15/1b1c21/000000?text=+'> 1b1c21</p>
+  <p>Accent</p>
+  <p><img src='https://via.placeholder.com/15/fefefe/000000?text=+'> fefefe</p>
+  <p>Buttons</p>
+  <p><img src='https://via.placeholder.com/15/3c51fa/000000?text=+'> 3c51fa</p>
+  <p>Currency</p>
+  <p><img src='https://via.placeholder.com/15/ffd700/000000?text=+'> ffd700</p>
+  
 </div>
