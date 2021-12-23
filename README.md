@@ -24,4 +24,10 @@
     <li>View inventory</li>
     <li>Search function</li>
   </ul>
+  <br/>
+  <h2>Requirements</h1>
+  <ol>
+    <li>Apache Server</li>
+    <li>SQL Server</li>
+  </ol>
 </div>
