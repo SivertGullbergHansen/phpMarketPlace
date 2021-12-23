@@ -11,3 +11,11 @@
   <h3>Description</h3>
   <p>This is a project written in pure PHP. No external libraries were used.</p>
 </div>
+
+<div align='left'>
+  <h2>Features</h2>
+  - [x] Login
+  - [x] Register
+  - [x] Logout
+  - [] Search
+</div>
