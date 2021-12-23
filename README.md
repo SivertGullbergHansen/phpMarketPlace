@@ -23,9 +23,15 @@
     <li>Dynamic item-grid :white_check_mark:</li>
     <li>Hashed session (MYSQL)</li>
     <li>Load items (MYSQL)</li>
+    <li>Filter by price</li>
+    <li>Filter by collection</li>
+    <li>Filter by colour</li>
+    <li>Filter by type</li>
     <li>Purchase item</li>
     <li>Sell item</li>
     <li>View inventory</li>
+    <li>Manage account</li>
+    <li>Change password</li>
     <li>Search function</li>
   </ul>
   <br/>
