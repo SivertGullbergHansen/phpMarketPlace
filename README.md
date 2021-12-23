@@ -18,9 +18,11 @@
   
   <h2>Features</h2>
   <ul>
-    <li>Login :white_check_mark:</li>
-    <li>Register :white_check_mark:</li>
+    <li>Login (MYSQL) :white_check_mark:</li>
+    <li>Register (MYSQL) :white_check_mark:</li>
     <li>Dynamic item-grid :white_check_mark:</li>
+    <li>Hashed session (MYSQL)</li>
+    <li>Load items (MYSQL)</li>
     <li>Purchase item</li>
     <li>Sell item</li>
     <li>View inventory</li>
