@@ -14,8 +14,13 @@
 
 <div align='left'>
   <h2>Features</h2>
-  - [x] Login
-  - [x] Register
-  - [x] Logout
-  - [] Search
+  <ul>
+    <li>Login :white_check_mark:</li>
+    <li>Register :white_check_mark:</li>
+    <li>Dynamic item-grid :white_check_mark:</li>
+    <li>Purchase item</li>
+    <li>Sell item</li>
+    <li>View inventory</li>
+    <li>Search function</li>
+  </ul>
 </div>
