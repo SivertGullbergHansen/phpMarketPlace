@@ -6,11 +6,11 @@ $accent: #fefefe;
 $headerBackground: #25262b;
 
 // Buttons
-$buttonBackground: #3c51fa;
+$buttonBackground: #7F00FF;
 $buttonAccentColor: #fefefe;
 
 // Button Hover
-$buttonHoverColor: #fefefe;
+$buttonHoverColor: #f4c4f3;
 $buttonHoverAccentColor: #1b1c21;
 
 // Item
@@ -28,18 +28,25 @@ body {
 
 button {
     background-color: $buttonBackground;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: $buttonAccentColor;
 
     padding: 1em;
     border: 0;
-    box-shadow: 0px 0px 20px 0px $buttonBackground;
+    box-shadow: 0px 0px 10px 0px $buttonBackground;
     cursor: pointer;
     border-radius: 5px;
 
     &:hover {
-        background-color: $buttonHoverColor;
-        color: $buttonHoverAccentColor;
-        box-shadow: 0px 0px 20px 0px $buttonHoverColor;
+        box-shadow: 0px 0px 20px 0px $buttonBackground;
+        font-weight: 900;
+
+
+
     }
 }
 

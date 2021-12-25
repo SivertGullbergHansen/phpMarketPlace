@@ -7,19 +7,21 @@ body {
 }
 
 button {
-  background-color: #3c51fa;
+  background-color: #7F00FF;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fefefe;
   padding: 1em;
   border: 0;
-  box-shadow: 0px 0px 20px 0px #3c51fa;
+  box-shadow: 0px 0px 10px 0px #7F00FF;
   cursor: pointer;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #fefefe;
-  color: #1b1c21;
-  box-shadow: 0px 0px 20px 0px #fefefe;
+  box-shadow: 0px 0px 20px 0px #7F00FF;
+  font-weight: 900;
 }
 
 input {
@@ -32,17 +34,17 @@ input {
 }
 
 input[type="submit"] {
-  background-color: #3c51fa;
-  box-shadow: 0px 0px 20px 0px #3c51fa;
+  background-color: #7F00FF;
+  box-shadow: 0px 0px 20px 0px #7F00FF;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
 }
 
 input[type="submit"]:hover {
-  background-color: #fefefe;
+  background-color: #f4c4f3;
   color: #1b1c21;
-  box-shadow: 0px 0px 20px 0px #fefefe;
+  box-shadow: 0px 0px 20px 0px #f4c4f3;
 }
 
 #search {
@@ -92,7 +94,7 @@ header #logBtn #playerName {
 }
 
 header #logBtn #playerCurrency {
-  color: gold;
+  color: #ffd700;
 }
 
 header #logBtn #playerCurrency::before {
@@ -202,7 +204,7 @@ header .logoTitle {
 
 #itemBrowser article h3 {
   font-size: 1em;
-  color: gold;
+  color: #ffd700;
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
