@@ -18,6 +18,16 @@ $itemName: #fefefe;
 $itemCollection: #dedede;
 $itemPrice: #ffd700;
 
+// Rarity
+$veryCommon: #9d9d9d;
+$common: #ffffff;
+$uncommon: #1eff00;
+$Rare: #0070dd;
+$veryRare: #a335ee;
+$special: #ff8000;
+$epic: #e6cc80;
+$legendary: #00ccff;
+
 html,
 body {
     height: 100vh;
@@ -41,12 +51,11 @@ button {
     cursor: pointer;
     border-radius: 5px;
 
+    width: 8em;
+
     &:hover {
         box-shadow: 0px 0px 20px 0px $buttonBackground;
         font-weight: 900;
-
-
-
     }
 }
 
@@ -188,14 +197,19 @@ header {
 }
 
 #itemBrowser {
-    position: absolute;
-    left: calc(20vw + 2em);
-    right: 2em;
+    margin-left: calc(20vw + 2em);
+    margin-right: 2em;
     padding: 2em 0;
     display: grid;
     gap: 2em;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+
+    button {
+        &:hover {
+            width: 60%;
+        }
+    }
 
     article {
         background-color: $headerBackground;
@@ -229,12 +243,114 @@ header {
             font-size: 1em;
             color: $itemCollection;
             margin: 0;
+
+            &[rarity="1"] {
+                &::before {
+                    content: "Very Common";
+                }
+
+                color: $veryCommon;
+            }
+
+            &[rarity="2"] {
+                &::before {
+                    content: "Common";
+                }
+
+                color: $common;
+            }
+
+            &[rarity="3"] {
+                &::before {
+                    content: "Uncommon";
+                }
+
+                color: $uncommon;
+            }
+
+            &[rarity="4"] {
+                &::before {
+                    content: "Rare";
+                }
+
+                color: $Rare;
+            }
+
+            &[rarity="5"] {
+                &::before {
+                    content: "Very Rare";
+                }
+
+                color: $veryRare;
+            }
+
+            &[rarity="6"] {
+                &::before {
+                    content: "Special";
+                }
+
+                color: $special;
+            }
+
+            &[rarity="7"] {
+                &::before {
+                    content: "Epic";
+                }
+
+                color: $epic;
+            }
+
+            &[rarity="8"] {
+                &::before {
+                    content: "Legendary";
+                }
+
+                color: $legendary;
+            }
         }
 
         h3 {
             font-size: 1em;
             color: $itemPrice;
             margin: 0;
+
+            &::before {
+                content: "$ ";
+            }
         }
     }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invis {
+    opacity: 0 !important;
+}
+
+#goTop {
+    position: fixed;
+    left: calc(20vw - 2em);
+    bottom: 2em;
+
+    width: 2em;
+    height: 2em;
+
+    font-weight: 900;
+    font-size: 1.5em;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+
+    p {
+        margin: 0;
+    }
+}
+
+.pagination {
+    display: flex;
+    padding: 2em;
 }

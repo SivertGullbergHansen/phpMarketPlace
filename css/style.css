@@ -17,6 +17,7 @@ button {
   box-shadow: 0px 0px 10px 0px #7F00FF;
   cursor: pointer;
   border-radius: 5px;
+  width: 8em;
 }
 
 button:hover {
@@ -157,14 +158,17 @@ header .logoTitle {
 }
 
 #itemBrowser {
-  position: absolute;
-  left: calc(20vw + 2em);
-  right: 2em;
+  margin-left: calc(20vw + 2em);
+  margin-right: 2em;
   padding: 2em 0;
   display: grid;
   gap: 2em;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+
+#itemBrowser button:hover {
+  width: 60%;
 }
 
 #itemBrowser article {
@@ -202,9 +206,108 @@ header .logoTitle {
   margin: 0;
 }
 
+#itemBrowser article h2[rarity="1"] {
+  color: #9d9d9d;
+}
+
+#itemBrowser article h2[rarity="1"]::before {
+  content: "Very Common";
+}
+
+#itemBrowser article h2[rarity="2"] {
+  color: #ffffff;
+}
+
+#itemBrowser article h2[rarity="2"]::before {
+  content: "Common";
+}
+
+#itemBrowser article h2[rarity="3"] {
+  color: #1eff00;
+}
+
+#itemBrowser article h2[rarity="3"]::before {
+  content: "Uncommon";
+}
+
+#itemBrowser article h2[rarity="4"] {
+  color: #0070dd;
+}
+
+#itemBrowser article h2[rarity="4"]::before {
+  content: "Rare";
+}
+
+#itemBrowser article h2[rarity="5"] {
+  color: #a335ee;
+}
+
+#itemBrowser article h2[rarity="5"]::before {
+  content: "Very Rare";
+}
+
+#itemBrowser article h2[rarity="6"] {
+  color: #ff8000;
+}
+
+#itemBrowser article h2[rarity="6"]::before {
+  content: "Special";
+}
+
+#itemBrowser article h2[rarity="7"] {
+  color: #e6cc80;
+}
+
+#itemBrowser article h2[rarity="7"]::before {
+  content: "Epic";
+}
+
+#itemBrowser article h2[rarity="8"] {
+  color: #00ccff;
+}
+
+#itemBrowser article h2[rarity="8"]::before {
+  content: "Legendary";
+}
+
 #itemBrowser article h3 {
   font-size: 1em;
   color: #ffd700;
   margin: 0;
+}
+
+#itemBrowser article h3::before {
+  content: "$ ";
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invis {
+  opacity: 0 !important;
+}
+
+#goTop {
+  position: fixed;
+  left: calc(20vw - 2em);
+  bottom: 2em;
+  width: 2em;
+  height: 2em;
+  font-weight: 900;
+  font-size: 1.5em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+}
+
+#goTop p {
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  padding: 2em;
 }
 /*# sourceMappingURL=style.css.map */
