@@ -80,5 +80,36 @@
   <li><img src='https://via.placeholder.com/15/ffd700/000000?text=+'> ffd700</li>
     </ul>
       </li>
+      </br>
+      <li>Rarities
+    <ul>
+    Very Common:
+  <li><img src='https://via.placeholder.com/15/9d9d9d/000000?text=+'> 9d9d9d</li>
+  </br>
+    Common:
+  <li><img src='https://via.placeholder.com/15/ffffff/000000?text=+'> ffffff</li>
+  </br>
+    Uncommon:
+  <li><img src='https://via.placeholder.com/15/1eff00/000000?text=+'> 1eff00</li>
+  </br>
+    Rare:
+  <li><img src='https://via.placeholder.com/15/0070dd/000000?text=+'> 0070dd</li>
+  </br>
+    Very Rare:
+  <li><img src='https://via.placeholder.com/15/a335ee/000000?text=+'> a335ee</li>
+  </br>
+    Special:
+  <li><img src='https://via.placeholder.com/15/ff8000/000000?text=+'> ff8000</li>
+  </br>
+    Epic:
+  <li><img src='https://via.placeholder.com/15/e6cc80/000000?text=+'> e6cc80</li>
+  </br>
+    Legendary:
+  <li><img src='https://via.placeholder.com/15/00ccff/000000?text=+'> 00ccff</li>
+  </br>
+    </ul>
+      </li>
+  </ul>
+      </li>
   </ul>
 </div>
