@@ -21,6 +21,10 @@
         Header('Location: login.php');
     }
     ?>
+
+    <div class="myAccount">
+        <h1>Welcome, <span>username</span>!</h1>
+    </div>
 </body>
 
 </html>

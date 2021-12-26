@@ -28,9 +28,10 @@
             <h1>Filters</h1>
             <div class="minMaxPrice">
                 <h2>Price</h2>
-                <input min="0" type="number" name="minPrice" id="minPrice" placeholder="Minimum">
-                <span>~</span>
-                <input min="0" type="number" name="maxPrice" id="maxPrice" placeholder="Maximum">
+                <div><input min="0" type="number" name="minPrice" id="minPrice" placeholder="Minimum">
+                    <span>~</span>
+                    <input min="0" type="number" name="maxPrice" id="maxPrice" placeholder="Maximum">
+                </div>
             </div>
             <div class="resultAmount">
                 <h2>Item count</h2>
@@ -136,7 +137,19 @@
         ?>
     </div>
 
-    <div class="pagination"><button class="hidden">&lt;</button><button>&gt;</button></div>
+    <div class="pagination"><button disabled>
+            <p>&lt;</p>
+        </button>
+        <p>
+            <span class="current" pageNum="1">1</span>
+            <span class="" pageNum="2">2</span>
+            <span class="" pageNum="3">3</span>
+            <span class="" pageNum="4">4</span>
+            <span class="" pageNum="5">5</span>
+        </p><button>
+            <p>&gt;</p>
+        </button>
+    </div>
 </body>
 
 </html>

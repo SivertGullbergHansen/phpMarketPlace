@@ -9,13 +9,8 @@ $headerBackground: #25262b;
 $buttonBackground: #7F00FF;
 $buttonAccentColor: #fefefe;
 
-// Button Hover
-$buttonHoverColor: #f4c4f3;
-$buttonHoverAccentColor: #1b1c21;
-
 // Item
 $itemName: #fefefe;
-$itemCollection: #dedede;
 $itemPrice: #ffd700;
 
 // Rarity
@@ -42,12 +37,12 @@ button {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E100FF, #7F00FF);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0px 0px 10px 0px $buttonBackground;
 
     color: $buttonAccentColor;
 
     padding: 1em;
     border: 0;
-    box-shadow: 0px 0px 10px 0px $buttonBackground;
     cursor: pointer;
     border-radius: 5px;
 
@@ -79,16 +74,20 @@ button {
 
             &[type="submit"] {
                 background-color: $buttonBackground;
-                box-shadow: 0px 0px 20px 0px $buttonBackground;
+                background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #E100FF, #7F00FF);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                box-shadow: 0px 0px 10px 0px $buttonBackground;
                 border: 0;
                 cursor: pointer;
                 border-radius: 5px;
             }
 
-            &[type="submit"]:hover {
-                background-color: $buttonHoverColor;
-                color: $buttonHoverAccentColor;
-                box-shadow: 0px 0px 20px 0px $buttonHoverColor;
+            &[type="submit"]:hover,
+            &[type="submit"]:focus-visible {
+                box-shadow: 0px 0px 20px 0px $buttonBackground;
+                font-weight: 900;
             }
         }
 
@@ -107,16 +106,20 @@ select {
 
     &[type="submit"] {
         background-color: $buttonBackground;
-        box-shadow: 0px 0px 20px 0px $buttonBackground;
+        background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E100FF, #7F00FF);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0px 0px 10px 0px $buttonBackground;
         border: 0;
         cursor: pointer;
         border-radius: 5px;
     }
 
-    &[type="submit"]:hover {
-        background-color: $buttonHoverColor;
-        color: $buttonHoverAccentColor;
-        box-shadow: 0px 0px 20px 0px $buttonHoverColor;
+    &[type="submit"]:hover,
+    &[type="submit"]:focus-visible {
+        box-shadow: 0px 0px 20px 0px $buttonBackground;
+        font-weight: 900;
     }
 }
 
@@ -161,7 +164,8 @@ header {
         align-items: center;
 
         #playerName {
-            font-weight: 800;
+            font-weight: 900;
+            text-transform: capitalize;
         }
 
         #playerCurrency {
@@ -180,21 +184,27 @@ header {
 }
 
 .sideBar {
-    form {
-        width: calc(20vw - 2em);
-        left: 2em;
-        height: 80vh;
-        position: fixed;
-        gap: 2em;
-        margin-top: 2em;
+    left: 2em;
+    right: calc(80vw - 2em);
+    height: 80vh;
+    position: fixed;
+    gap: 2em;
+    margin-top: 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: $headerBackground;
 
+    form {
+        width: 100%;
+        height: 100%;
         display: grid;
+        gap: 2em;
         justify-items: center;
         align-items: baseline;
         grid-auto-rows: minmax(min-content, max-content);
 
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        background-color: $headerBackground;
+        h2 {
+            margin: 0;
+        }
 
         .minMaxPrice {
             input {
@@ -208,8 +218,13 @@ header {
             }
         }
 
-        div {
+        .resultAmount,
+        .minMaxPrice {
             text-align: center;
+            display: grid;
+            justify-items: center;
+            align-items: baseline;
+            gap: 1em;
         }
 
         button {
@@ -223,7 +238,7 @@ header {
 #itemBrowser {
     margin-left: calc(20vw + 2em);
     margin-right: 2em;
-    padding: 2em 0;
+    padding-top: 2em;
     display: grid;
     gap: 2em;
     justify-items: center;
@@ -265,7 +280,6 @@ header {
 
         h2 {
             font-size: 1em;
-            color: $itemCollection;
             margin: 0;
 
             &[rarity="1"] {
@@ -371,10 +385,59 @@ header {
 
     p {
         margin: 0;
+        padding: 0;
     }
 }
 
 .pagination {
     display: flex;
-    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em 0;
+    position: absolute;
+    left: 2em;
+    right: calc(80vw - 2em);
+
+    p {
+        span {
+            font-weight: 400;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    button {
+        width: 6em;
+        height: 3em;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+
+        p {
+            font-size: 1.5em;
+            margin: 0;
+            font-weight: 800;
+        }
+    }
+
+    .current {
+        font-weight: 900;
+        color: lightgray;
+        text-shadow: 0px 0px 15px lightgray;
+    }
+
+    button:disabled {
+        background: #0f0c29;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: gray;
+        box-shadow: none;
+    }
 }
