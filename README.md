@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src="img/preview/github-banner.png" alt="A screenshot preview of this project's browse-page">
+  <img width='60%' src="img/preview/github-banner.png" alt="A screenshot preview of this project's browse-page">
   </br>
   </br>
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/SivertGullbergHansen/phpMarketPlace"></a>
@@ -7,17 +7,46 @@
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SivertGullbergHansen/phpMarketPlace"></a>
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace"><img alt="GitHub license" src="https://img.shields.io/github/license/SivertGullbergHansen/phpMarketPlace"></a>
   <br/>
-  <h1>:dollar:Php Marketplace:dollar:</h1>  
+  <h1>Php Marketplace</h1>
   <h2>PHP + MYSQL</h2>
   </br>
-  <h2>Screenshot</h2>
+  <h3>Index:</h3>
+  <ol align='left'>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#screenshots'>Screenshots</a></li>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#description'>Description</a>
+  <ol>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#about-the-project'>About the Project</a></li>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#about-the-marketplace'>About the Marketplace</a></li>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#features'>Features</a></li>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#requirements'>Requirements</a></li>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#recommendations'>Recommendations</a></li>
+  <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#colours'>Colours</a></li>
+  </ol>
+  </li>
+  </ol>
+  </br>
+  <h2>Screenshots</h2>
+  <img src="img/preview/screenshot_login.png" alt="A screenshot preview of this project's browse-page">
   <img src="img/preview/screenshot1.png" alt="A screenshot preview of this project's browse-page">
 </div>
 <br/>
 
 <div align='left'>
   <h2>Description</h3>
-  <p>This is a project written in pure PHP. No external libraries were used.</p>
+  <h3>About the project</h3>
+  <p><i>This project is meant to be used as a template for when you wish to integrate a marketplace into your service or game. It is made to be open-source and free to use by everyone. Check the <a href=''>license</a> if you wish to use this commercially.</i>
+  
+  The project has been built in conjunction with <b>PHP Version 8.0.7</b>. It should be supported by older versions of PHP, however I urge you to use the same or newer version of PHP.
+  
+  The project was also built in conjunction with <b>Apache 2.4.48</b>.</p>
+  
+  </br>
+
+  <h2>About the marketplace</h2>
+  <p>This is a marketplace where users can register an account to sell items and buy listed items from other players. 
+  
+  It does not feature any commercial payments, as it is made with the purpose to serve as a template. The currency users have in their account is completely fictional and is registered in the server's database.</p>
+  
   <br/>
   
   <h2>Features</h2>
@@ -42,9 +71,14 @@
   
   <h2>Requirements</h1>
   <ol>
-    <li>Apache Server (with PHP 8+ enabled)</li>
-    <li>SQL Server</li>
+    <li>Apache Server (with PHP v8.0.7)</li>
+    <li>A configured MySQL server</li>
+    <li><i>(optional)</i> PHPMyAdmin</li>
   </ol>
+  <br/>
+
+  <h2>Recommendations</h1>
+    <p>It is recommended that you use a PHP development environment such as <a href='https://www.apachefriends.org/download.html'>XAMPP</a> to run the project locally. Select the latest version of XAMPP to receive the latest PHP version (version 8+)</p>
   <br/>
   
   <h2>Colours</h2>
