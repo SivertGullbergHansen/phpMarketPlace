@@ -65,11 +65,11 @@
     </br>
   <li>Buttons
     <ul>
-    Active button:
+    Active button
   <li><img src='https://via.placeholder.com/15/E100FF/000000?text=+'> E100FF</li>
   <li><img src='https://via.placeholder.com/15/7F00FF/000000?text=+'> 7F00FF</li>
   </br>
-  Disabled button:
+  Disabled button
   <li><img src='https://via.placeholder.com/15/24243e/000000?text=+'> 24243e</li>
   <li><img src='https://via.placeholder.com/15/302b63/000000?text=+'> 302b63</li>
     </ul>
@@ -83,28 +83,28 @@
       </br>
       <li>Rarities
     <ul>
-    Very Common:
+    Very Common
   <li><img src='https://via.placeholder.com/15/9d9d9d/000000?text=+'> 9d9d9d</li>
   </br>
-    Common:
+    Common
   <li><img src='https://via.placeholder.com/15/ffffff/000000?text=+'> ffffff</li>
   </br>
-    Uncommon:
+    Uncommon
   <li><img src='https://via.placeholder.com/15/1eff00/000000?text=+'> 1eff00</li>
   </br>
-    Rare:
+    Rare
   <li><img src='https://via.placeholder.com/15/0070dd/000000?text=+'> 0070dd</li>
   </br>
-    Very Rare:
+    Very Rare
   <li><img src='https://via.placeholder.com/15/a335ee/000000?text=+'> a335ee</li>
   </br>
-    Special:
+    Special
   <li><img src='https://via.placeholder.com/15/ff8000/000000?text=+'> ff8000</li>
   </br>
-    Epic:
+    Epic
   <li><img src='https://via.placeholder.com/15/e6cc80/000000?text=+'> e6cc80</li>
   </br>
-    Legendary:
+    Legendary
   <li><img src='https://via.placeholder.com/15/00ccff/000000?text=+'> 00ccff</li>
   </br>
     </ul>
