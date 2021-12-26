@@ -50,21 +50,31 @@
   <li><img src='https://via.placeholder.com/15/1b1c21/000000?text=+'> 1b1c21</li>
     </ul>
       </li>
+    </br>
   <li>Header
     <ul>
   <li><img src='https://via.placeholder.com/15/25262b/000000?text=+'> 25262b</li>
     </ul>
       </li>
+    </br>
   <li>Accent
     <ul>
   <li><img src='https://via.placeholder.com/15/fefefe/000000?text=+'> fefefe</li>
     </ul>
       </li>
+    </br>
   <li>Buttons
     <ul>
-  <li><img src='https://via.placeholder.com/15/3c51fa/000000?text=+'> 3c51fa</li>
+    Active button:
+  <li><img src='https://via.placeholder.com/15/E100FF/000000?text=+'> E100FF</li>
+  <li><img src='https://via.placeholder.com/15/7F00FF/000000?text=+'> 7F00FF</li>
+  </br>
+  Disabled button:
+  <li><img src='https://via.placeholder.com/15/24243e/000000?text=+'> 24243e</li>
+  <li><img src='https://via.placeholder.com/15/302b63/000000?text=+'> 302b63</li>
     </ul>
       </li>
+    </br>
   <li>Currency
     <ul>
   <li><img src='https://via.placeholder.com/15/ffd700/000000?text=+'> ffd700</li>
