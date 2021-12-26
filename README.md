@@ -5,8 +5,8 @@
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace"><img alt="GitHub license" src="https://img.shields.io/github/license/SivertGullbergHansen/phpMarketPlace"></a>
   <br/>
   
-  <h1>:dollar:Php Marketplace:dollar:</h1>  
-  <h2>PHP + MYSQL</h2>
+  <img src="img/preview/github-banner.png" alt="A screenshot preview of this project's browse-page">
+  <h2>Screenshot</h2>
   <img src="img/preview/screenshot1.png" alt="A screenshot preview of this project's browse-page">
 </div>
 <br/>
