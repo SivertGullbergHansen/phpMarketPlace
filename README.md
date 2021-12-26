@@ -69,6 +69,7 @@
     <li>Manage account</li>
     <li>Change password</li>
     <li>Search function</li>
+    <li>Item history (creation date, previous owners)</li>
   </ul>
   <br/>
   
