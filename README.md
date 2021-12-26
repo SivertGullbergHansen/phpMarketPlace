@@ -56,6 +56,7 @@
     <li>Login (MYSQL) :white_check_mark:</li>
     <li>Register (MYSQL) :white_check_mark:</li>
     <li>Dynamic item-grid :white_check_mark:</li>
+    <li>Documentation</li>
     <li>Hashed session (MYSQL)</li>
     <li>Load items (MYSQL)</li>
     <li>Filter by price</li>
