@@ -11,7 +11,8 @@
   <h2>PHP + MYSQL</h2>
   </br>
   <h3>Index:</h3>
-  <ol align='left'>
+  <div align='left'>
+  <ol>
   <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#screenshots'>Screenshots</a></li>
   <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#description'>Description</a>
   <ol>
@@ -24,6 +25,7 @@
   </ol>
   </li>
   </ol>
+  </div>
   </br>
   <h2>Screenshots</h2>
   <img src="img/preview/screenshot_login.png" alt="A screenshot preview of this project's browse-page">
