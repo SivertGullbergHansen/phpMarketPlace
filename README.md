@@ -42,7 +42,7 @@
   
   <h2>Requirements</h1>
   <ol>
-    <li>Apache Server</li>
+    <li>Apache Server (with PHP 8+ enabled)</li>
     <li>SQL Server</li>
   </ol>
   <br/>
