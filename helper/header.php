@@ -13,4 +13,12 @@
     else
         echo "<div id='logBtn'><a href='login.php'>Login</a><a href='register.php'>Register</a></div>";
     ?>
+
+    <script>
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        document.getElementById('playerCurrency').innerHTML = numberWithCommas(document.getElementById('playerCurrency').innerHTML);
+    </script>
 </header>
