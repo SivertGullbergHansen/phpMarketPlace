@@ -10,7 +10,7 @@
   <h1>Php Marketplace</h1>
   <h2>PHP + MYSQL</h2>
   </br>
-  <h3>Index:</h3>
+  <h3 align='left'>Index:</h3>
   <div align='left'>
   <ol>
   <li><a href='https://github.com/SivertGullbergHansen/phpMarketPlace#screenshots'>Screenshots</a></li>
