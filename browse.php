@@ -60,7 +60,7 @@
         }
 
         // Generate random data
-        for ($i = 0; $i < 48; $i++) {
+        for ($i = 0; $i < 24; $i++) {
             $randomID = random_int(0, 9);
             $randomRarity = random_int(1, 8);
             $randomName = random_int(0, 19);
