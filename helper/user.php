@@ -69,7 +69,7 @@ class User extends Database
             $_SESSION['user_id'] = $userInfo[0];
             $_SESSION['username'] = $userInfo[2];
             $_SESSION['userCurrency'] = $userInfo[1];
-            $sessionHash = hash('sha256', $this->username);
+            $sessionHash = hash('sha256', $userInfo[2]);
             $_SESSION['sessionHash'] = $sessionHash;
 
             mysqli_query($connection, "UPDATE users SET session_hash = '$sessionHash' WHERE username = '$this->username'");
