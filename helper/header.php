@@ -9,7 +9,7 @@
         session_start();
     }
     if (isset($_SESSION["user_id"]))
-        echo "<div id='logBtn'><p id='playerCurrency'>0</p><a href='account.php' id='playerName'>" . $_SESSION['username'] . "</a><a href='logout.php'>Logout</a></div>";
+        echo "<div id='logBtn'><p id='playerCurrency'>" . $_SESSION['userCurrency'] . "</p><a href='account.php' id='playerName'>" . $_SESSION['username'] . "</a><a href='logout.php'>Logout</a></div>";
     else
         echo "<div id='logBtn'><a href='login.php'>Login</a><a href='register.php'>Register</a></div>";
     ?>

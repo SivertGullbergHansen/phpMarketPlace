@@ -58,15 +58,17 @@ class User extends Database
     {
         $connection = $this->connect();
 
-        $query = "SELECT username,password FROM users WHERE username = '$this->username'";
+        $query = "SELECT password FROM users WHERE username = '$this->username'";
         $result = mysqli_query($connection, $query);
         $row = mysqli_fetch_array($result);
 
         if (!$result) {
             die('Failed!' . mysqli_error($connection));
-        } else if ($row != null && password_verify($this->password, $row[1])) {
-            $_SESSION['user_id'] = mysqli_query($connection, "SELECT userID FROM users WHERE username = '$this->username'");
-            $_SESSION['username'] = $this->username;
+        } else if ($row != null && password_verify($this->password, $row[0])) {
+            $userInfo = mysqli_fetch_array(mysqli_query($connection, "SELECT userID,currency,username FROM users WHERE username = '$this->username'"));
+            $_SESSION['user_id'] = $userInfo[0];
+            $_SESSION['username'] = $userInfo[2];
+            $_SESSION['userCurrency'] = $userInfo[1];
             $sessionHash = hash('sha256', $this->username);
             $_SESSION['sessionHash'] = $sessionHash;
 
