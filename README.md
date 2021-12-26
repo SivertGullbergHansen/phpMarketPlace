@@ -7,7 +7,7 @@
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SivertGullbergHansen/phpMarketPlace"></a>
   <a href="https://github.com/SivertGullbergHansen/phpMarketPlace"><img alt="GitHub license" src="https://img.shields.io/github/license/SivertGullbergHansen/phpMarketPlace"></a>
   <br/>
-  <h1>Php Marketplace</h1>
+  <h1>Php Marketplace | <a href='https://sivert.xyz/store'>Live Preview</a></h1>
   <h2>PHP + MYSQL</h2>
   </br>
   <h3 align='left'>Index:</h3>
