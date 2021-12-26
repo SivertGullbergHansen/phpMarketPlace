@@ -31,6 +31,20 @@ body {
     color: $accent;
 }
 
+a {
+    color: $accent;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+* {
+    font-family: 'Mulish', sans-serif;
+    transition: all 0.25s;
+}
+
 button {
     background-color: $buttonBackground;
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
@@ -127,21 +141,16 @@ select {
     background-color: $background;
     border-radius: 5px;
     padding: .5em;
-}
+    width: 6em;
 
-a {
-    color: $accent;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
+    &:active,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+        width: 24em;
     }
 }
 
-* {
-    font-family: 'Mulish', sans-serif;
-    transition: all 0.3s;
-}
 
 header {
     display: flex;

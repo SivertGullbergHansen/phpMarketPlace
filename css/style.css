@@ -6,6 +6,20 @@ body {
   color: #fefefe;
 }
 
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: 'Mulish', sans-serif;
+  transition: all 0.25s;
+}
+
 button {
   background-color: #7F00FF;
   /* Chrome 10-25, Safari 5.1-6 */
@@ -96,20 +110,11 @@ select[type="submit"]:focus-visible {
   background-color: #1b1c21;
   border-radius: 5px;
   padding: .5em;
+  width: 6em;
 }
 
-a {
-  color: #fefefe;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-* {
-  font-family: 'Mulish', sans-serif;
-  transition: all 0.3s;
+#search:active, #search:focus, #search:focus-visible, #search:focus-within {
+  width: 24em;
 }
 
 header {
