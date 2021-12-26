@@ -36,7 +36,7 @@
 <div align='left'>
   <h2>Description</h3>
   <h3>About the project</h3>
-  <p><i>This project is meant to be used as a template for when you wish to integrate a marketplace into your service or game. It is made to be open-source and free to use by everyone. Check the <a href=''>license</a> if you wish to use this commercially.</i>
+  <p><i>This project is meant to be used as a template for when you wish to integrate a marketplace into your service or game. It is made to be open-source and free to use by everyone. Check the <a href='LICENSE'>license</a> if you wish to use this commercially.</i>
   
   The project has been built in conjunction with <b>PHP Version 8.0.7</b>. It should be supported by older versions of PHP, however I urge you to use the same or newer version of PHP.
   
