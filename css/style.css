@@ -25,16 +25,29 @@ button:hover {
   font-weight: 900;
 }
 
-input {
-  background-color: #25262b;
-  color: #fefefe;
-  border: 0;
-  font-size: 1em;
-  height: 2em;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.centerForm {
+  width: 100vw;
+  height: 40vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
-input[type="submit"] {
+.centerForm form {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  gap: 1em;
+  width: 30vw;
+}
+
+.centerForm form input {
+  text-align: center;
+  background-color: #25262b;
+}
+
+.centerForm form input[type="submit"] {
   background-color: #7F00FF;
   box-shadow: 0px 0px 20px 0px #7F00FF;
   border: 0;
@@ -42,7 +55,33 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-input[type="submit"]:hover {
+.centerForm form input[type="submit"]:hover {
+  background-color: #f4c4f3;
+  color: #1b1c21;
+  box-shadow: 0px 0px 20px 0px #f4c4f3;
+}
+
+input,
+select {
+  background-color: #1b1c21;
+  color: #fefefe;
+  border: 0;
+  font-size: 1em;
+  height: 2em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+input[type="submit"],
+select[type="submit"] {
+  background-color: #7F00FF;
+  box-shadow: 0px 0px 20px 0px #7F00FF;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover,
+select[type="submit"]:hover {
   background-color: #f4c4f3;
   color: #1b1c21;
   box-shadow: 0px 0px 20px 0px #f4c4f3;
@@ -107,28 +146,7 @@ header .logoTitle {
   font-weight: 900;
 }
 
-.centerForm {
-  width: 100vw;
-  height: 40vh;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.centerForm form {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  gap: 1em;
-  width: 30vw;
-}
-
-.centerForm form input {
-  text-align: center;
-}
-
-.sideBar {
+.sideBar form {
   width: calc(20vw - 2em);
   left: 2em;
   height: 80vh;
@@ -143,15 +161,19 @@ header .logoTitle {
   background-color: #25262b;
 }
 
-.sideBar .minMaxPrice input {
-  width: 6em;
+.sideBar form .minMaxPrice input {
+  width: 7em;
 }
 
-.sideBar div {
+.sideBar form .resultAmount select {
+  width: 12em;
+}
+
+.sideBar form div {
   text-align: center;
 }
 
-.sideBar button {
+.sideBar form button {
   position: absolute;
   bottom: 1em;
   width: 6vw;

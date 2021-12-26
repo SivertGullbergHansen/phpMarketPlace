@@ -24,14 +24,25 @@
     ?>
 
     <div class="sideBar">
-        <h1>Filters</h1>
-        <div class="minMaxPrice">
-            <h2>Price</h2>
-            <input min="0" type="number" name="minPrice" id="minPrice" placeholder="Minimum">
-            <span>~</span>
-            <input min="0" type="number" name="maxPrice" id="maxPrice" placeholder="Maximum">
-        </div>
-        <button>Apply</button>
+        <form method="post">
+            <h1>Filters</h1>
+            <div class="minMaxPrice">
+                <h2>Price</h2>
+                <input min="0" type="number" name="minPrice" id="minPrice" placeholder="Minimum">
+                <span>~</span>
+                <input min="0" type="number" name="maxPrice" id="maxPrice" placeholder="Maximum">
+            </div>
+            <div class="resultAmount">
+                <h2>Item count</h2>
+                <select name="itemCount" id="itemCount">
+                    <option value="24" selected>24</option>
+                    <option value="48">48</option>
+                    <option value="96">96</option>
+                    <option value="inf">Infinite scrolling</option>
+                </select>
+            </div>
+            <input type="submit" value="Apply">
+        </form>
     </div>
 
     <div id="itemBrowser">
@@ -49,7 +60,7 @@
         }
 
         // Generate random data
-        for ($i = 0; $i < 60; $i++) {
+        for ($i = 0; $i < 48; $i++) {
             $randomID = random_int(0, 9);
             $randomRarity = random_int(1, 8);
             $randomName = random_int(0, 19);
