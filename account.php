@@ -23,7 +23,12 @@
     ?>
 
     <div class="myAccount">
-        <h1>Welcome, <span>username</span>!</h1>
+        <h1>Welcome, <span><?php
+                            echo $_SESSION['username'];
+                            ?></span>!</h1>
+        <div>
+
+        </div>
     </div>
 </body>
 
