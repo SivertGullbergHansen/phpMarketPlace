@@ -469,3 +469,19 @@ header {
         }
     }
 }
+
+.alert {
+    position: absolute;
+    left: 35vw;
+    right: 35vw;
+    top: 5em;
+    height: 2em;
+    background-color: rgba($color:red, $alpha: .25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+}
