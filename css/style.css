@@ -160,7 +160,7 @@ header .logoTitle {
 .sideBar {
   left: 2em;
   right: calc(80vw - 2em);
-  height: 80vh;
+  height: 75vh;
   position: fixed;
   gap: 2em;
   margin-top: 2em;
