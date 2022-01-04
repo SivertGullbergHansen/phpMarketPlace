@@ -18,6 +18,7 @@
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
 
-        document.getElementById('playerCurrency').innerHTML = numberWithCommas(document.getElementById('playerCurrency').innerHTML);
+        if (document.getElementById('playerCurrency'))
+            document.getElementById('playerCurrency').innerHTML = numberWithCommas(document.getElementById('playerCurrency').innerHTML);
     </script>
 </header>
