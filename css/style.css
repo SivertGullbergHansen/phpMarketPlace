@@ -113,7 +113,7 @@ select[type="submit"]:focus-visible {
   width: 6em;
 }
 
-#search:active, #search:focus, #search:focus-visible, #search:focus-within {
+#search:active, #search:hover, #search:focus, #search:focus-visible, #search:focus-within {
   width: 24em;
 }
 
@@ -416,5 +416,9 @@ header .logoTitle {
 
 .myAccount h1 {
   margin: 0;
+}
+
+.myAccount h1 span {
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=style.css.map */

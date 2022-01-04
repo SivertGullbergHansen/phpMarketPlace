@@ -144,6 +144,7 @@ select {
     width: 6em;
 
     &:active,
+    &:hover,
     &:focus,
     &:focus-visible,
     &:focus-within {
@@ -462,5 +463,9 @@ header {
 
     h1 {
         margin: 0;
+
+        span {
+            text-transform: capitalize;
+        }
     }
 }
