@@ -1,18 +1,13 @@
 <?php // superclass definition : Database
 // contains Database related methods. 
-
 class Database
 {
-
     protected static function connect()
     {
         // Written by Sivert Gullberg Hansen
         // echo "Database : connect<br>";
 
-        $host = 'localhost';
-        $username = 'root';
-        $password = '';
-        $database = 'marketplace';
+        include('./config/database_info.php');
 
         $connection = mysqli_connect($host, $username, $password, $database);
 
@@ -41,7 +36,7 @@ class Database
 
         // printing error message in case of query failure
         if (!$result) {
-            die('Query failed!' . mysqli_error($connection));
+            die('Query failed: ' . mysqli_error($connection));
         } else {
             //echo "Entries Retrieved!<br>";
         }

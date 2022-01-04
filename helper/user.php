@@ -46,7 +46,7 @@ class User extends Database
         $result = mysqli_query($connection, $query);
 
         if (!$result) {
-            die('Failed!' . mysqli_error($connection));
+            die('Failed: ' . mysqli_error($connection));
         } else {
             header('Location: login.php');
         }
@@ -63,7 +63,7 @@ class User extends Database
         $row = mysqli_fetch_array($result);
 
         if (!$result) {
-            die('Failed!' . mysqli_error($connection));
+            die('Failed: ' . mysqli_error($connection));
         } else if ($row != null && password_verify($this->password, $row[0])) {
             $userInfo = mysqli_fetch_array(mysqli_query($connection, "SELECT userID,currency,username FROM users WHERE username = '$this->username'"));
             $_SESSION['user_id'] = $userInfo[0];
@@ -75,7 +75,7 @@ class User extends Database
             mysqli_query($connection, "UPDATE users SET session_hash = '$sessionHash' WHERE username = '$this->username'");
             header('Location: browse.php');
         } else {
-            echo 'Failed';
+            echo 'Failed!';
         }
 
         $this->disconnect($connection);
