@@ -337,7 +337,7 @@ header .logoTitle {
 
 #goTop {
   position: fixed;
-  left: calc(20vw - 2em);
+  right: 2em;
   bottom: 2em;
   width: 2em;
   height: 2em;
