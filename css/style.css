@@ -251,7 +251,7 @@ header .logoTitle {
   display: inline-block;
   z-index: 2;
   position: absolute;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 #itemBrowser article .dot:nth-of-type(2) {
@@ -259,8 +259,8 @@ header .logoTitle {
 }
 
 #itemBrowser article img {
-  width: 8em;
-  height: 8em;
+  width: 6em;
+  height: 6em;
   margin-top: 4em;
   margin-bottom: 2em;
   object-fit: contain;
