@@ -34,7 +34,7 @@ button:hover {
   box-shadow: 0px 0px 20px 0px #2c206a;
   font-weight: 900;
   border: 0;
-  background: linear-gradient(to right, #392b80, #2c206a);
+  background: radial-gradient(ellipse at top, #bd2efc, transparent), radial-gradient(ellipse at bottom, #bd2efc, transparent), radial-gradient(ellipse at left, #5115ff, transparent), radial-gradient(ellipse at right, #5115ff, transparent);
 }
 
 .centerForm {
@@ -349,6 +349,10 @@ header .logoTitle {
   gap: 4px;
 }
 
+#itemBrowser article button {
+  height: 48px;
+}
+
 .hidden {
   display: none !important;
 }
@@ -371,6 +375,11 @@ header .logoTitle {
   padding: 0;
   z-index: 999;
   border: 1px solid #fefefe;
+}
+
+#goTop:hover {
+  background: #2c206a;
+  border: 2px solid #fefefe;
 }
 
 #goTop p {

@@ -68,7 +68,10 @@ button {
         box-shadow: 0px 0px 20px 0px $buttonBackground;
         font-weight: 900;
         border: 0;
-        background: linear-gradient(to right, $buttonGradient, $buttonBackground);
+        background: radial-gradient(ellipse at top, #bd2efc, transparent),
+            radial-gradient(ellipse at bottom, #bd2efc, transparent),
+            radial-gradient(ellipse at left, #5115ff, transparent),
+            radial-gradient(ellipse at right, #5115ff, transparent);
     }
 }
 
@@ -395,6 +398,10 @@ header {
             align-items: center;
             gap: 4px;
         }
+
+        button {
+            height: 48px;
+        }
     }
 }
 
@@ -424,6 +431,11 @@ header {
 
     z-index: 999;
     border: 1px solid $accent;
+
+    &:hover {
+        background: $buttonBackground;
+        border: 2px solid $accent;
+    }
 
     p {
         margin: 0;
