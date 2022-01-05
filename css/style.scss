@@ -1,15 +1,17 @@
 // Page
-$background: #1b1c21;
+$background: #2a215a;
 $accent: #fefefe;
 
 // Header
-$headerBackground: #25262b;
+$headerBackground: #1d1449;
 
 // Buttons
-$buttonBackground: #7F00FF;
+$buttonBackground: #2c206a;
+$buttonGradient: #392b80;
 $buttonAccentColor: #fefefe;
 
 // Item
+$itemBackground: #140d36;
 $itemName: #fefefe;
 $itemPrice: #ffd700;
 
@@ -45,18 +47,14 @@ a {
     transition: all 0.25s;
 }
 
+
 button {
-    background-color: $buttonBackground;
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E100FF, #7F00FF);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0px 0px 10px 0px $buttonBackground;
+    background: transparent;
+    border: 1px solid $buttonGradient;
 
     color: $buttonAccentColor;
 
     padding: 1em;
-    border: 0;
     cursor: pointer;
     border-radius: 5px;
 
@@ -65,6 +63,8 @@ button {
     &:hover {
         box-shadow: 0px 0px 20px 0px $buttonBackground;
         font-weight: 900;
+        border: 0;
+        background: linear-gradient(to right, $buttonGradient, $buttonBackground);
     }
 }
 
@@ -88,9 +88,9 @@ button {
 
             &[type="submit"] {
                 background-color: $buttonBackground;
-                background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+                background: -webkit-linear-gradient(to right, $buttonGradient, $buttonBackground);
                 /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #E100FF, #7F00FF);
+                background: linear-gradient(to right, $buttonGradient, $buttonBackground);
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 box-shadow: 0px 0px 10px 0px $buttonBackground;
                 border: 0;
@@ -120,9 +120,9 @@ select {
 
     &[type="submit"] {
         background-color: $buttonBackground;
-        background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+        background: -webkit-linear-gradient(to right, $buttonGradient, $buttonBackground);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #E100FF, #7F00FF);
+        background: linear-gradient(to right, $buttonGradient, $buttonBackground);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         box-shadow: 0px 0px 10px 0px $buttonBackground;
         border: 0;
@@ -180,10 +180,6 @@ header {
 
         #playerCurrency {
             color: $itemPrice;
-
-            &::before {
-                content: "$ ";
-            }
         }
     }
 
@@ -261,25 +257,44 @@ header {
     }
 
     article {
-        background-color: $headerBackground;
+        background: $itemBackground;
+        border-radius: 16px;
         display: grid;
         gap: 1em;
         justify-items: center;
         align-items: baseline;
         width: fit-content;
         height: fit-content;
-        padding-bottom: 2em;
+        padding: 2em 0;
         width: 16em;
+        z-index: 1;
 
         &:hover {
             cursor: pointer;
         }
 
+        .dot {
+            background-color: #2c206a;
+            opacity: .25;
+            width: 8em;
+            height: 8em;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: 2;
+            position: absolute;
+            margin-top: 2em;
+
+            &:nth-of-type(2) {
+                transform: scale(1.5);
+            }
+        }
+
         img {
             width: 8em;
             height: 8em;
-            padding-top: 2em;
+            margin: 2em 0;
             object-fit: contain;
+            z-index: 3;
         }
 
         h1 {
@@ -359,12 +374,9 @@ header {
 
         h3 {
             font-size: 1em;
+
             color: $itemPrice;
             margin: 0;
-
-            &::before {
-                content: "$ ";
-            }
         }
     }
 }
@@ -481,9 +493,9 @@ header {
     z-index: 10000;
 
     background-color: $buttonBackground;
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: -webkit-linear-gradient(to right, $buttonGradient, $buttonBackground);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, $buttonGradient, $buttonBackground);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0px 0px 10px 0px $buttonBackground;
 
@@ -502,4 +514,8 @@ header {
         font-style: italic;
         font-size: 1.1em;
     }
+}
+
+.material-icons {
+    font-size: inherit;
 }

@@ -2,7 +2,7 @@ html,
 body {
   height: 100vh;
   margin: 0;
-  background-color: #1b1c21;
+  background-color: #2a215a;
   color: #fefefe;
 }
 
@@ -21,22 +21,20 @@ a:hover {
 }
 
 button {
-  background-color: #7F00FF;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E100FF, #7F00FF);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #7F00FF;
+  background: transparent;
+  border: 1px solid #392b80;
   color: #fefefe;
   padding: 1em;
-  border: 0;
   cursor: pointer;
   border-radius: 5px;
   width: 8em;
 }
 
 button:hover {
-  box-shadow: 0px 0px 20px 0px #7F00FF;
+  box-shadow: 0px 0px 20px 0px #2c206a;
   font-weight: 900;
+  border: 0;
+  background: linear-gradient(to right, #392b80, #2c206a);
 }
 
 .centerForm {
@@ -58,28 +56,28 @@ button:hover {
 
 .centerForm form input {
   text-align: center;
-  background-color: #25262b;
+  background-color: #1d1449;
 }
 
 .centerForm form input[type="submit"] {
-  background-color: #7F00FF;
+  background-color: #2c206a;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #392b80, #2c206a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #7F00FF;
+  box-shadow: 0px 0px 10px 0px #2c206a;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .centerForm form input[type="submit"]:hover, .centerForm form input[type="submit"]:focus-visible {
-  box-shadow: 0px 0px 20px 0px #7F00FF;
+  box-shadow: 0px 0px 20px 0px #2c206a;
   font-weight: 900;
 }
 
 input,
 select {
-  background-color: #1b1c21;
+  background-color: #2a215a;
   color: #fefefe;
   border: 0;
   font-size: 1em;
@@ -89,11 +87,11 @@ select {
 
 input[type="submit"],
 select[type="submit"] {
-  background-color: #7F00FF;
+  background-color: #2c206a;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #392b80, #2c206a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #7F00FF;
+  box-shadow: 0px 0px 10px 0px #2c206a;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
@@ -102,12 +100,12 @@ select[type="submit"] {
 input[type="submit"]:hover, input[type="submit"]:focus-visible,
 select[type="submit"]:hover,
 select[type="submit"]:focus-visible {
-  box-shadow: 0px 0px 20px 0px #7F00FF;
+  box-shadow: 0px 0px 20px 0px #2c206a;
   font-weight: 900;
 }
 
 #search {
-  background-color: #1b1c21;
+  background-color: #2a215a;
   border-radius: 5px;
   padding: .5em;
   width: 6em;
@@ -123,7 +121,7 @@ header {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 1em;
-  background-color: #25262b;
+  background-color: #1d1449;
 }
 
 header img {
@@ -148,10 +146,6 @@ header #logBtn #playerCurrency {
   color: #ffd700;
 }
 
-header #logBtn #playerCurrency::before {
-  content: "$ ";
-}
-
 header .logoTitle {
   font-size: 2em;
   font-weight: 900;
@@ -165,7 +159,7 @@ header .logoTitle {
   gap: 2em;
   margin-top: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #25262b;
+  background-color: #1d1449;
 }
 
 .sideBar form {
@@ -220,26 +214,45 @@ header .logoTitle {
 }
 
 #itemBrowser article {
-  background-color: #25262b;
+  background: #140d36;
+  border-radius: 16px;
   display: grid;
   gap: 1em;
   justify-items: center;
   align-items: baseline;
   width: fit-content;
   height: fit-content;
-  padding-bottom: 2em;
+  padding: 2em 0;
   width: 16em;
+  z-index: 1;
 }
 
 #itemBrowser article:hover {
   cursor: pointer;
 }
 
+#itemBrowser article .dot {
+  background-color: #2c206a;
+  opacity: .25;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 2;
+  position: absolute;
+  margin-top: 2em;
+}
+
+#itemBrowser article .dot:nth-of-type(2) {
+  transform: scale(1.5);
+}
+
 #itemBrowser article img {
   width: 8em;
   height: 8em;
-  padding-top: 2em;
+  margin: 2em 0;
   object-fit: contain;
+  z-index: 3;
 }
 
 #itemBrowser article h1 {
@@ -321,10 +334,6 @@ header .logoTitle {
   font-size: 1em;
   color: #ffd700;
   margin: 0;
-}
-
-#itemBrowser article h3::before {
-  content: "$ ";
 }
 
 .hidden {
@@ -411,7 +420,7 @@ header .logoTitle {
   margin-top: 6em;
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #25262b;
+  background-color: #1d1449;
 }
 
 .myAccount h1 {
@@ -431,11 +440,11 @@ header .logoTitle {
   justify-content: center;
   align-items: center;
   z-index: 10000;
-  background-color: #7F00FF;
+  background-color: #2c206a;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #392b80, #2c206a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #7F00FF;
+  box-shadow: 0px 0px 10px 0px #2c206a;
   color: #fefefe;
   padding: 6px;
   border: 0;
@@ -450,5 +459,9 @@ header .logoTitle {
 .alert:hover {
   font-style: italic;
   font-size: 1.1em;
+}
+
+.material-icons {
+  font-size: inherit;
 }
 /*# sourceMappingURL=style.css.map */
