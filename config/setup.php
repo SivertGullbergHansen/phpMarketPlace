@@ -19,13 +19,14 @@
         <form method="post">
             <h1>Database Setup</h1>
             <h2>Database information</h2>
-            <input value="<?php echo $_POST['host'] ?>" type="text" placeholder="Hostname" name="host" id="host">
-            <input value="<?php echo $_POST['username'] ?>" type="text" placeholder="Username" name="username"
-                id="username">
-            <input value="<?php echo $_POST['password'] ?>" type="password" placeholder="Password" name="password"
-                id="password">
-            <input value="<?php echo $_POST['database'] ?>" type="text" placeholder="Database name" name="database"
-                id="database">
+            <input value="<?php if (isset($_POST['host'])) echo $_POST['host'] ?>" type="text" placeholder="Hostname"
+                name="host" id="host">
+            <input value="<?php if (isset($_POST['username'])) echo $_POST['username'] ?>" type="text"
+                placeholder="Username" name="username" id="username">
+            <input value="<?php if (isset($_POST['password'])) echo $_POST['password'] ?>" type="password"
+                placeholder="Password" name="password" id="password">
+            <input value="<?php if (isset($_POST['database'])) echo $_POST['database'] ?>" type="text"
+                placeholder="Database name" name="database" id="database">
             <input type="submit" value="Setup project">
         </form>
         <p style="line-height: 2em;">
