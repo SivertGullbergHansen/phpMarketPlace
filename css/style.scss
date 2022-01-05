@@ -471,14 +471,14 @@ header {
 }
 
 .alert {
-    position: absolute;
-    left: 35vw;
-    right: 35vw;
-    top: 10vh;
-    height: 5vh;
+    position: fixed;
+    left: 15vw;
+    right: 15vw;
+    height: 2vh;
     display: grid;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
 
     background-color: $buttonBackground;
     background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
@@ -489,7 +489,7 @@ header {
 
     color: $buttonAccentColor;
 
-    padding: 16px;
+    padding: 6px;
     border: 0;
     cursor: pointer;
     border-radius: 5px;
