@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'marketplace';
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "marketplace";

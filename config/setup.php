@@ -29,7 +29,7 @@
                 placeholder="Database name" name="database" id="database">
             <input type="submit" value="Setup project">
         </form>
-        <p style="line-height: 2em;">
+        <p style="line-height: 2em;max-width: 80vw">
             <?php
             // Open this file to setup your database.
             if (!empty($_POST)) {
@@ -50,6 +50,17 @@
                 if ($connection->connect_error) {
                     echo '<b>Failed to connect 👎🏼</b><br/>' . $connection->connect_error;
                 } else {
+
+                    // Update database_info.php file
+                    $myfile = fopen("database_info.php", "w") or die("Unable to open file!");
+                    $txt = "<?php" . PHP_EOL .
+                        '$host = "' . $host . '";' . PHP_EOL .
+                        '$username = "' . $username . '";' . PHP_EOL .
+                        '$password = "' . $password . '";' . PHP_EOL .
+                        '$database = "' . $database . '";';;
+                    fwrite($myfile, $txt);
+                    fclose($myfile);
+
                     echo '<b>Connected successfully 👍🏼!</b><br/>';
                     echo 'Selecting database with name "' . $database . '" ...<br/>';
 
