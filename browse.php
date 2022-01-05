@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <?php include_once('helper/external.php'); ?>
     <script src="js/scrollToTop.js" defer></script>
 </head>
 
@@ -53,9 +50,11 @@
             echo ("
             <article itemid=$itemID onclick='viewItem(this)'>
             <img src='$imageURL' alt='An image of the item called $itemName'>
+            <span class='dot'></span>
+            <span class='dot'></span>
             <h1>$itemName</h1>
             <h2 rarity=$itemRarity></h2>
-            <h3>$price</h3>
+            <h3><span class='material-icons'>payments</span> $price</h3>
             <button>Purchase</button>
             </article>");
         }
