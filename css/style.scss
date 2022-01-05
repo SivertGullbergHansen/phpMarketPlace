@@ -93,6 +93,7 @@ button {
             text-align: center;
             background-color: $inputBackground;
             font-weight: 700;
+            border-radius: 6px;
 
             &[type="submit"] {
                 background-color: $buttonBackground;

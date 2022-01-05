@@ -58,6 +58,7 @@ button:hover {
   text-align: center;
   background-color: #140d36;
   font-weight: 700;
+  border-radius: 6px;
 }
 
 .centerForm form input[type="submit"] {
