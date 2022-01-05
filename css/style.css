@@ -56,7 +56,8 @@ button:hover {
 
 .centerForm form input {
   text-align: center;
-  background-color: #1d1449;
+  background-color: #140d36;
+  font-weight: 700;
 }
 
 .centerForm form input[type="submit"] {
@@ -68,6 +69,10 @@ button:hover {
   border: 0;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.centerForm form input::placeholder {
+  color: #544799;
 }
 
 .centerForm form input[type="submit"]:hover, .centerForm form input[type="submit"]:focus-visible {
@@ -144,6 +149,9 @@ header #logBtn #playerName {
 
 header #logBtn #playerCurrency {
   color: #ffd700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 header .logoTitle {
@@ -160,6 +168,7 @@ header .logoTitle {
   margin-top: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #1d1449;
+  border-radius: 16px;
 }
 
 .sideBar form {
@@ -334,6 +343,10 @@ header .logoTitle {
   font-size: 1em;
   color: #ffd700;
   margin: 0;
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .hidden {
@@ -356,6 +369,8 @@ header .logoTitle {
   justify-items: center;
   align-items: center;
   padding: 0;
+  z-index: 999;
+  border: 1px solid #fefefe;
 }
 
 #goTop p {

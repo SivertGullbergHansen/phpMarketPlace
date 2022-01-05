@@ -2,6 +2,10 @@
 $background: #2a215a;
 $accent: #fefefe;
 
+// inputs
+$inputBackground: #140d36;
+$placeholder: #544799;
+
 // Header
 $headerBackground: #1d1449;
 
@@ -84,7 +88,8 @@ button {
 
         input {
             text-align: center;
-            background-color: $headerBackground;
+            background-color: $inputBackground;
+            font-weight: 700;
 
             &[type="submit"] {
                 background-color: $buttonBackground;
@@ -96,6 +101,10 @@ button {
                 border: 0;
                 cursor: pointer;
                 border-radius: 5px;
+            }
+
+            &::placeholder {
+                color: $placeholder;
             }
 
             &[type="submit"]:hover,
@@ -180,6 +189,9 @@ header {
 
         #playerCurrency {
             color: $itemPrice;
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
     }
 
@@ -198,6 +210,7 @@ header {
     margin-top: 2em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: $headerBackground;
+    border-radius: 16px;
 
     form {
         width: 100%;
@@ -377,6 +390,10 @@ header {
 
             color: $itemPrice;
             margin: 0;
+            color: $itemPrice;
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
     }
 }
@@ -404,6 +421,9 @@ header {
     justify-items: center;
     align-items: center;
     padding: 0;
+
+    z-index: 999;
+    border: 1px solid $accent;
 
     p {
         margin: 0;
