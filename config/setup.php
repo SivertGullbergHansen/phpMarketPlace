@@ -18,6 +18,7 @@
     <div class="centerForm">
         <form method="post">
             <h1>Database Setup</h1>
+            <p>This page updates your database_info.php file and configures your database.</p>
             <h2>Database information</h2>
             <input value="<?php if (isset($_POST['host'])) echo $_POST['host'] ?>" type="text" placeholder="Hostname"
                 name="host" id="host">
