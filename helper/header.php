@@ -15,11 +15,12 @@
     ?>
 
     <script>
-        function numberWithCommas(x) {
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 
-        if (document.getElementById('playerCurrency'))
-            document.getElementById('playerCurrency').innerHTML = numberWithCommas(document.getElementById('playerCurrency').innerHTML);
+    if (document.getElementById('playerCurrency'))
+        document.getElementById('playerCurrency').innerHTML = numberWithCommas(document.getElementById('playerCurrency')
+            .innerHTML);
     </script>
 </header>

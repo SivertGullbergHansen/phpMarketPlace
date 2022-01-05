@@ -15,37 +15,73 @@
 </head>
 
 <body>
-    <div class="setup">
-        <h1>Database Setup</h1>
-        <p>
+    <div class="centerForm">
+        <form method="post">
+            <h1>Database Setup</h1>
+            <h2>Database information</h2>
+            <input value="<?php echo $_POST['host'] ?>" type="text" placeholder="Hostname" name="host" id="host">
+            <input value="<?php echo $_POST['username'] ?>" type="text" placeholder="Username" name="username"
+                id="username">
+            <input value="<?php echo $_POST['password'] ?>" type="password" placeholder="Password" name="password"
+                id="password">
+            <input value="<?php echo $_POST['database'] ?>" type="text" placeholder="Database name" name="database"
+                id="database">
+            <input type="submit" value="Setup project">
+        </form>
+        <p style="line-height: 2em;">
             <?php
             // Open this file to setup your database.
+            if (!empty($_POST)) {
+                $host       = $_POST['host'];
+                $username   = $_POST['username'];
+                $password   = $_POST['password'];
+                $database   = $_POST['database'];
 
-            include('../config/database_info.php');
+                echo 'Connecting to server ...<br/>';
+                $connection = new mysqli($host, $username, $password);
 
-            $database = 'se';
+                // Queries
+                $selectDatabase = mysqli_query($connection, 'use ' . $database . ';');
+                $createDatabase = mysqli_query($connection, "create database " . $database . ";");
 
-            $connection = new mysqli($host, $username, $password);
+                $sqlFile = file_get_contents('marketplace.sql');
 
-            echo 'Selecting database with name "' . $database . '"...<br/>';
-
-            $selectDatabase = mysqli_query($connection, 'use ' . $database);
-
-            if ($selectDatabase) { // if database exists
-                echo 'Database exists 👍🏼.<br/>Selected database with name: "' . $database . '"<br/>';
-            } else { // if database doesnt exist
-                echo 'Database does not exist 👎🏼: ' . mysqli_error($connection) . '.<br/>';
-
-                $createDatabaseQuery = mysqli_query($connection, 'create database ' . $database . ';');
-
-                if ($createDatabaseQuery) { // if new database created
-                    echo 'Database exists 👍🏼.<br/>Selected database with name: "' . $database . '"<br/>';
+                if ($connection->connect_error) {
+                    echo '<b>Failed to connect 👎🏼</b><br/>' . $connection->connect_error;
+                } else {
+                    echo '<b>Connected successfully 👍🏼!</b><br/>';
+                    echo 'Selecting database with name "' . $database . '" ...<br/>';
 
                     if ($selectDatabase) { // if database exists
-                        echo 'Database with name "' . $database . '" exists 👍🏼.<br/>';
+                        echo '<b>Database selected 👍🏼!</b></br>';
+
+                        // Create tables
+                        echo 'Creating tables ...<br/>';
+
+                        if ($connection->multi_query($sqlFile)) {
+                            echo '<b>Successfully configured database 👍🏼!</b><br/>';
+                            echo '<a href="../index.php"><h2>You may now use the project as intended</h2><a/>';
+                        } else {
+                            echo '<b>Failed to configure tables 👎🏼!</b><br/>' . mysqli_error($connection);
+                        }
+                    } else { // if database doesnt exist
+                        echo '<b>Database does not exist 👎🏼</b><br/>';
+
+                        echo 'Creating database with name ' . $database . ' ...<br/>';
+
+                        if ($createDatabase) { // if new database created
+                            echo '<b>Database created 👍🏼.</b><br/>';
+
+                            if ($selectDatabase) { // if database exists
+                                echo '<b>Database with name "' . $database . '" selected 👍🏼!</b><br/>';
+                            } else {
+                                echo '<b>Database with name "' . $database . '" could not be selected 👎🏼</b><br/>';
+                                echo '<h2>Press "Setup Project" again</h2>';
+                            }
+                        } else {
+                            echo '<b>Failed to create database 👎🏼</b><br/> ' . mysqli_error($connection) . '<br/>';
+                        }
                     }
-                } else {
-                    echo 'Failed to create database 👎🏼: ' . mysqli_error($connection) . '<br/>';
                 }
             }
             ?>
