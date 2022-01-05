@@ -503,3 +503,14 @@ header {
         font-size: 1.1em;
     }
 }
+
+.setup {
+    padding: 4em;
+    margin: 0 auto;
+    width: 40vw;
+    height: 40vh;
+    display: grid;
+    align-content: baseline;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
