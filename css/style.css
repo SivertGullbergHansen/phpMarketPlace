@@ -232,12 +232,13 @@ header .logoTitle {
   align-items: baseline;
   width: fit-content;
   height: fit-content;
-  padding: 2em 0;
   width: 16em;
   z-index: 1;
 }
 
 #itemBrowser article:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 16px;
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -250,7 +251,7 @@ header .logoTitle {
   display: inline-block;
   z-index: 2;
   position: absolute;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 #itemBrowser article .dot:nth-of-type(2) {
@@ -260,7 +261,8 @@ header .logoTitle {
 #itemBrowser article img {
   width: 8em;
   height: 8em;
-  margin: 2em 0;
+  margin-top: 4em;
+  margin-bottom: 2em;
   object-fit: contain;
   z-index: 3;
 }
@@ -352,6 +354,7 @@ header .logoTitle {
 
 #itemBrowser article button {
   height: 48px;
+  margin-bottom: 2em;
 }
 
 .hidden {
