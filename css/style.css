@@ -15,6 +15,11 @@ a:hover {
   text-decoration: underline;
 }
 
+a:active {
+  transform: scale(0.9);
+  transition: all .01s;
+}
+
 * {
   font-family: 'Mulish', sans-serif;
   transition: all 0.25s;
@@ -35,6 +40,11 @@ button:hover {
   font-weight: 900;
   border: 0;
   background: radial-gradient(ellipse at top, #bd2efc, transparent), radial-gradient(ellipse at bottom, #bd2efc, transparent), radial-gradient(ellipse at left, #5115ff, transparent), radial-gradient(ellipse at right, #5115ff, transparent);
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: all .01s;
 }
 
 .centerForm {
@@ -117,7 +127,12 @@ select[type="submit"]:focus-visible {
   width: 6em;
 }
 
-#search:active, #search:hover, #search:focus, #search:focus-visible, #search:focus-within {
+#search:active {
+  transform: scale(0.975);
+  transition: all .01s;
+}
+
+#search:hover, #search:focus, #search:focus-visible, #search:focus-within {
   width: 24em;
 }
 

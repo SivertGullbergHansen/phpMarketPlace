@@ -44,6 +44,11 @@ a {
     &:hover {
         text-decoration: underline;
     }
+
+    &:active {
+        transform: scale(.9);
+        transition: all .01s;
+    }
 }
 
 * {
@@ -72,6 +77,11 @@ button {
             radial-gradient(ellipse at bottom, #bd2efc, transparent),
             radial-gradient(ellipse at left, #5115ff, transparent),
             radial-gradient(ellipse at right, #5115ff, transparent);
+    }
+
+    &:active {
+        transform: scale(.9);
+        transition: all .01s;
     }
 }
 
@@ -156,7 +166,11 @@ select {
     padding: .5em;
     width: 6em;
 
-    &:active,
+    &:active {
+        transform: scale(.975);
+        transition: all .01s;
+    }
+
     &:hover,
     &:focus,
     &:focus-visible,
