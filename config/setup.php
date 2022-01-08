@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,14 +18,10 @@
             <h1>Database Setup</h1>
             <p>This page updates your database_info.php file and configures your database.</p>
             <h2>Database information</h2>
-            <input value="<?php if (isset($_POST['host'])) echo $_POST['host'] ?>" type="text" placeholder="Hostname"
-                name="host" id="host">
-            <input value="<?php if (isset($_POST['username'])) echo $_POST['username'] ?>" type="text"
-                placeholder="Username" name="username" id="username">
-            <input value="<?php if (isset($_POST['password'])) echo $_POST['password'] ?>" type="password"
-                placeholder="Password" name="password" id="password">
-            <input value="<?php if (isset($_POST['database'])) echo $_POST['database'] ?>" type="text"
-                placeholder="Database name" name="database" id="database">
+            <input value="<?php if (isset($_POST['host'])) echo $_POST['host'] ?>" type="text" placeholder="Hostname" name="host" id="host">
+            <input value="<?php if (isset($_POST['username'])) echo $_POST['username'] ?>" type="text" placeholder="Username" name="username" id="username">
+            <input value="<?php if (isset($_POST['password'])) echo $_POST['password'] ?>" type="password" placeholder="Password" name="password" id="password">
+            <input value="<?php if (isset($_POST['database'])) echo $_POST['database'] ?>" type="text" placeholder="Database name" name="database" id="database">
             <input type="submit" value="Setup project">
         </form>
         <p style="line-height: 2em;max-width: 80vw">
@@ -46,19 +40,17 @@
                 $selectDatabase = mysqli_query($connection, 'use ' . $database . ';');
                 $createDatabase = mysqli_query($connection, "create database " . $database . ";");
 
-                $sqlFile = file_get_contents('marketplace.sql');
-
                 if ($connection->connect_error) {
                     echo '<b>Failed to connect 👎🏼</b><br/>' . $connection->connect_error;
                 } else {
-
                     // Update database_info.php file
-                    $myfile = fopen("database_info.php", "w") or die("Unable to open file!");
+                    $myfile = fopen("database_info.php", "w") or die("Unable to open database_info.php file!");
+
                     $txt = "<?php" . PHP_EOL .
                         '$host = "' . $host . '";' . PHP_EOL .
                         '$username = "' . $username . '";' . PHP_EOL .
                         '$password = "' . $password . '";' . PHP_EOL .
-                        '$database = "' . $database . '";';;
+                        '$database = "' . $database . '";';
                     fwrite($myfile, $txt);
                     fclose($myfile);
 
@@ -70,6 +62,7 @@
 
                         // Create tables
                         echo 'Creating tables ...<br/>';
+                        $sqlFile = file_get_contents('marketplace.sql');
 
                         if ($connection->multi_query($sqlFile)) {
                             echo '<b>Successfully configured database 👍🏼!</b><br/>';
