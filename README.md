@@ -58,6 +58,7 @@
     <li>Dynamic item-grid :white_check_mark:</li>
     <li>Load items from MYSQL</li>
     <li>Documentation</li>
+    <li>Fictional currency (MYSQL)</li>
     <li>Hashed session (MYSQL)</li>
     <li>Filter by price</li>
     <li>Filter by collection</li>
