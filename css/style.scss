@@ -10,9 +10,12 @@ $placeholder: #544799;
 $headerBackground: #1d1449;
 
 // Buttons
-$buttonBackground: #2c206a;
-$buttonGradient: #392b80;
+$buttonBackground: #bd2efc;
+$buttonGlow: $buttonBackground;
+$buttonGradient: #5115ff;
 $buttonAccentColor: #fefefe;
+$buttonDisabledBG: #0f0c29;
+$buttonDisabledAC: #bbb;
 
 // Item
 $itemBackground: #140d36;
@@ -28,6 +31,32 @@ $veryRare: #a335ee;
 $special: #ff8000;
 $epic: #e6cc80;
 $legendary: #00ccff;
+
+//Light Mode
+$background: #f1f1f1;
+$accent: #1f1f1f;
+$inputBackground: $background;
+$placeholder: #333;
+$headerBackground: #fefefe;
+$buttonBackground: #00ff51;
+$buttonGradient: $buttonBackground;
+$buttonAccentColor: #1f1f1f;
+$buttonGlow: transparent;
+$buttonDisabledAC: #bbb;
+$buttonDisabledBG: #ddd;
+$itemBackground: #fefefe;
+$itemName: #1f1f1f;
+$itemPrice: #7e7406;
+$veryCommon: #9d9d9d;
+$common: #000000;
+$uncommon: #17c200;
+$Rare: #0070dd;
+$veryRare: #a335ee;
+$special: #d76b00;
+$epic: #9d7d1f;
+$legendary: #00aad5;
+
+
 
 html,
 body {
@@ -69,13 +98,13 @@ button {
     width: 8em;
 
     &:hover {
-        box-shadow: 0px 0px 20px 0px $buttonBackground;
+        box-shadow: 0px 0px 20px 0px $buttonGlow;
         font-weight: 900;
         border: 0;
-        background: radial-gradient(ellipse at top, #bd2efc, transparent),
-            radial-gradient(ellipse at bottom, #bd2efc, transparent),
-            radial-gradient(ellipse at left, #5115ff, transparent),
-            radial-gradient(ellipse at right, #5115ff, transparent);
+        background: radial-gradient(ellipse at top, $buttonBackground, transparent),
+            radial-gradient(ellipse at bottom, $buttonBackground, transparent),
+            radial-gradient(ellipse at left, $buttonGradient, transparent),
+            radial-gradient(ellipse at right, $buttonGradient, transparent);
     }
 
     &:active {
@@ -106,11 +135,12 @@ button {
 
             &[type="submit"] {
                 background-color: $buttonBackground;
+                color: $buttonAccentColor;
                 background: -webkit-linear-gradient(to right, $buttonGradient, $buttonBackground);
                 /* Chrome 10-25, Safari 5.1-6 */
                 background: linear-gradient(to right, $buttonGradient, $buttonBackground);
                 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                box-shadow: 0px 0px 10px 0px $buttonBackground;
+                box-shadow: 0px 0px 10px 0px $buttonGlow;
                 border: 0;
                 cursor: pointer;
                 border-radius: 5px;
@@ -129,7 +159,7 @@ button {
 
             &[type="submit"]:hover,
             &[type="submit"]:focus-visible {
-                box-shadow: 0px 0px 20px 0px $buttonBackground;
+                box-shadow: 0px 0px 20px 0px $buttonGlow;
                 font-weight: 900;
             }
         }
@@ -148,12 +178,13 @@ select {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     &[type="submit"] {
+        color: $buttonAccentColor;
         background-color: $buttonBackground;
         background: -webkit-linear-gradient(to right, $buttonGradient, $buttonBackground);
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, $buttonGradient, $buttonBackground);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        box-shadow: 0px 0px 10px 0px $buttonBackground;
+        box-shadow: 0px 0px 10px 0px $buttonGlow;
         border: 0;
         cursor: pointer;
         border-radius: 5px;
@@ -161,7 +192,7 @@ select {
 
     &[type="submit"]:hover,
     &[type="submit"]:focus-visible {
-        box-shadow: 0px 0px 20px 0px $buttonBackground;
+        box-shadow: 0px 0px 20px 0px $buttonGlow;
         font-weight: 900;
     }
 }
@@ -509,22 +540,17 @@ header {
     }
 
     button:disabled {
-        background: #0f0c29;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #24243e, #302b63);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #24243e, #302b63);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        color: gray;
+        background: $buttonDisabledBG;
+        border: 0;
+        color: $buttonDisabledAC;
         box-shadow: none;
     }
 }
 
 .myAccount {
-    width: 60vw;
-    height: 60vh;
+    width: 90vw;
     margin: 0 auto;
-    margin-top: 6em;
+    margin-top: 2em;
     padding: 2em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: $headerBackground;
@@ -534,6 +560,21 @@ header {
 
         span {
             text-transform: capitalize;
+        }
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            gap: 1em;
+
+            .active {
+                background-color: $buttonGradient;
+            }
         }
     }
 }
@@ -553,7 +594,7 @@ header {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, $buttonGradient, $buttonBackground);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0px 0px 10px 0px $buttonBackground;
+    box-shadow: 0px 0px 10px 0px $buttonGlow;
 
     color: $buttonAccentColor;
 

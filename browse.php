@@ -8,6 +8,7 @@
     <title>Browse</title>
     <?php include_once('helper/external.php'); ?>
     <script src="js/scrollToTop.js" defer></script>
+
 </head>
 
 <body>

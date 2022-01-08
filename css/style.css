@@ -2,12 +2,12 @@ html,
 body {
   height: 100vh;
   margin: 0;
-  background-color: #2a215a;
-  color: #fefefe;
+  background-color: #f1f1f1;
+  color: #1f1f1f;
 }
 
 a {
-  color: #fefefe;
+  color: #1f1f1f;
   text-decoration: none;
 }
 
@@ -27,8 +27,8 @@ a:active {
 
 button {
   background: transparent;
-  border: 1px solid #392b80;
-  color: #fefefe;
+  border: 1px solid #00ff51;
+  color: #1f1f1f;
   padding: 1em;
   cursor: pointer;
   border-radius: 5px;
@@ -36,10 +36,10 @@ button {
 }
 
 button:hover {
-  box-shadow: 0px 0px 20px 0px #2c206a;
+  box-shadow: 0px 0px 20px 0px transparent;
   font-weight: 900;
   border: 0;
-  background: radial-gradient(ellipse at top, #bd2efc, transparent), radial-gradient(ellipse at bottom, #bd2efc, transparent), radial-gradient(ellipse at left, #5115ff, transparent), radial-gradient(ellipse at right, #5115ff, transparent);
+  background: radial-gradient(ellipse at top, #00ff51, transparent), radial-gradient(ellipse at bottom, #00ff51, transparent), radial-gradient(ellipse at left, #00ff51, transparent), radial-gradient(ellipse at right, #00ff51, transparent);
 }
 
 button:active {
@@ -66,39 +66,40 @@ button:active {
 
 .centerForm form input {
   text-align: center;
-  background-color: #140d36;
+  background-color: #f1f1f1;
   font-weight: 700;
   border-radius: 6px;
 }
 
 .centerForm form input[type="submit"] {
-  background-color: #2c206a;
+  background-color: #00ff51;
+  color: #1f1f1f;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #392b80, #2c206a);
+  background: linear-gradient(to right, #00ff51, #00ff51);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #2c206a;
+  box-shadow: 0px 0px 10px 0px transparent;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .centerForm form input::placeholder {
-  color: #544799;
+  color: #333;
 }
 
 .centerForm form input:hover::placeholder, .centerForm form input:focus::placeholder {
-  color: #fefefe;
+  color: #1f1f1f;
 }
 
 .centerForm form input[type="submit"]:hover, .centerForm form input[type="submit"]:focus-visible {
-  box-shadow: 0px 0px 20px 0px #2c206a;
+  box-shadow: 0px 0px 20px 0px transparent;
   font-weight: 900;
 }
 
 input,
 select {
-  background-color: #2a215a;
-  color: #fefefe;
+  background-color: #f1f1f1;
+  color: #1f1f1f;
   border: 0;
   font-size: 1em;
   height: 2em;
@@ -107,11 +108,12 @@ select {
 
 input[type="submit"],
 select[type="submit"] {
-  background-color: #2c206a;
+  color: #1f1f1f;
+  background-color: #00ff51;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #392b80, #2c206a);
+  background: linear-gradient(to right, #00ff51, #00ff51);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #2c206a;
+  box-shadow: 0px 0px 10px 0px transparent;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
@@ -120,12 +122,12 @@ select[type="submit"] {
 input[type="submit"]:hover, input[type="submit"]:focus-visible,
 select[type="submit"]:hover,
 select[type="submit"]:focus-visible {
-  box-shadow: 0px 0px 20px 0px #2c206a;
+  box-shadow: 0px 0px 20px 0px transparent;
   font-weight: 900;
 }
 
 #search {
-  background-color: #2a215a;
+  background-color: #f1f1f1;
   border-radius: 5px;
   padding: .5em;
   width: 6em;
@@ -146,7 +148,7 @@ header {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 1em;
-  background-color: #1d1449;
+  background-color: #fefefe;
 }
 
 header img {
@@ -168,7 +170,7 @@ header #logBtn #playerName {
 }
 
 header #logBtn #playerCurrency {
-  color: #ffd700;
+  color: #7e7406;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -187,7 +189,7 @@ header .logoTitle {
   gap: 2em;
   margin-top: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #1d1449;
+  background-color: #fefefe;
   border-radius: 16px;
 }
 
@@ -243,7 +245,7 @@ header .logoTitle {
 }
 
 #itemBrowser article {
-  background: #140d36;
+  background: #fefefe;
   border-radius: 16px;
   display: grid;
   gap: 1em;
@@ -288,7 +290,7 @@ header .logoTitle {
 
 #itemBrowser article h1 {
   font-size: 1.5em;
-  color: #fefefe;
+  color: #1f1f1f;
   margin: 0;
 }
 
@@ -306,7 +308,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="2"] {
-  color: #ffffff;
+  color: #000000;
 }
 
 #itemBrowser article h2[rarity="2"]::before {
@@ -314,7 +316,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="3"] {
-  color: #1eff00;
+  color: #17c200;
 }
 
 #itemBrowser article h2[rarity="3"]::before {
@@ -338,7 +340,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="6"] {
-  color: #ff8000;
+  color: #d76b00;
 }
 
 #itemBrowser article h2[rarity="6"]::before {
@@ -346,7 +348,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="7"] {
-  color: #e6cc80;
+  color: #9d7d1f;
 }
 
 #itemBrowser article h2[rarity="7"]::before {
@@ -354,7 +356,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="8"] {
-  color: #00ccff;
+  color: #00aad5;
 }
 
 #itemBrowser article h2[rarity="8"]::before {
@@ -363,9 +365,9 @@ header .logoTitle {
 
 #itemBrowser article h3 {
   font-size: 1em;
-  color: #ffd700;
+  color: #7e7406;
   margin: 0;
-  color: #ffd700;
+  color: #7e7406;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -397,12 +399,12 @@ header .logoTitle {
   align-items: center;
   padding: 0;
   z-index: 999;
-  border: 1px solid #fefefe;
+  border: 1px solid #1f1f1f;
 }
 
 #goTop:hover {
-  background: #2c206a;
-  border: 2px solid #fefefe;
+  background: #00ff51;
+  border: 2px solid #1f1f1f;
 }
 
 #goTop p {
@@ -451,23 +453,19 @@ header .logoTitle {
 }
 
 .pagination button:disabled {
-  background: #0f0c29;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: gray;
+  background: #ddd;
+  border: 0;
+  color: #bbb;
   box-shadow: none;
 }
 
 .myAccount {
-  width: 60vw;
-  height: 60vh;
+  width: 90vw;
   margin: 0 auto;
-  margin-top: 6em;
+  margin-top: 2em;
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #1d1449;
+  background-color: #fefefe;
 }
 
 .myAccount h1 {
@@ -476,6 +474,21 @@ header .logoTitle {
 
 .myAccount h1 span {
   text-transform: capitalize;
+}
+
+.myAccount nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.myAccount nav div {
+  display: flex;
+  gap: 1em;
+}
+
+.myAccount nav div .active {
+  background-color: #00ff51;
 }
 
 .alert {
@@ -487,12 +500,12 @@ header .logoTitle {
   justify-content: center;
   align-items: center;
   z-index: 10000;
-  background-color: #2c206a;
+  background-color: #00ff51;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #392b80, #2c206a);
+  background: linear-gradient(to right, #00ff51, #00ff51);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px #2c206a;
-  color: #fefefe;
+  box-shadow: 0px 0px 10px 0px transparent;
+  color: #1f1f1f;
   padding: 6px;
   border: 0;
   cursor: pointer;

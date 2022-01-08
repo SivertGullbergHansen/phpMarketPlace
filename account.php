@@ -20,11 +20,16 @@
     ?>
 
     <div class="myAccount">
-        <h1>Welcome, <span><?php
-                            echo $_SESSION['username'];
-                            ?></span>!</h1>
+        <nav>
+            <h1>Welcome, <span><?php echo $_SESSION['username']; ?></span>!</h1>
+            <div>
+                <button class="active">Profile</button>
+                <button>Inventory</button>
+                <button>History</button>
+            </div>
+        </nav>
         <div>
-
+            <h2>Profile</h2>
         </div>
     </div>
 </body>
