@@ -56,20 +56,23 @@
     <li>Login (MYSQL) :white_check_mark:</li>
     <li>Register (MYSQL) :white_check_mark:</li>
     <li>Dynamic item-grid :white_check_mark:</li>
+    <li>Load items from MYSQL</li>
     <li>Documentation</li>
     <li>Hashed session (MYSQL)</li>
-    <li>Load items (MYSQL)</li>
     <li>Filter by price</li>
     <li>Filter by collection</li>
     <li>Filter by colour</li>
     <li>Filter by type</li>
-    <li>Purchase item</li>
-    <li>Sell item</li>
-    <li>View inventory</li>
+    <li>Purchase items</li>
+    <li>Sell items</li>
+    <li>View your inventory</li>
     <li>Manage account</li>
     <li>Change password</li>
     <li>Search function</li>
     <li>Item history (creation date, previous owners)</li>
+    <li>Months top seller</li>
+    <li>Most recent listed item</li>
+    <li>Price drop percentage from most average sell-price</li>
   </ul>
   <br/>
   
@@ -83,6 +86,12 @@
 
   <h2>Recommendations</h1>
     <p>It is recommended that you use a PHP development environment such as <a href='https://www.apachefriends.org/download.html'>XAMPP</a> to run the project locally. Select the latest version of XAMPP to receive the latest PHP version (version 8+)</p>
+  <br/>
+
+  <h2>Installation</h1>
+    <p>Clone the project to your apache-servers documentRoot-folder, navigate to <a href="http://localhost/marketplace/config/setup.php">http://localhost/config/setup.php</a> and insert your MYSQL details. Follow the instructions on the setup-page if necessary. 
+    
+    The setup page will configure your files based on your input and if it successfully connects to your server.</p>
   <br/>
   
   <h2>Colours</h2>
