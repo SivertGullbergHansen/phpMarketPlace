@@ -86,6 +86,10 @@ button:active {
   color: #544799;
 }
 
+.centerForm form input:hover::placeholder, .centerForm form input:focus::placeholder {
+  color: #fefefe;
+}
+
 .centerForm form input[type="submit"]:hover, .centerForm form input[type="submit"]:focus-visible {
   box-shadow: 0px 0px 20px 0px #2c206a;
   font-weight: 900;

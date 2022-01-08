@@ -120,6 +120,13 @@ button {
                 color: $placeholder;
             }
 
+            &:hover,
+            &:focus {
+                &::placeholder {
+                    color: $accent;
+                }
+            }
+
             &[type="submit"]:hover,
             &[type="submit"]:focus-visible {
                 box-shadow: 0px 0px 20px 0px $buttonBackground;
