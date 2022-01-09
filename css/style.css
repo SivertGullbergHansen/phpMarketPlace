@@ -2,12 +2,12 @@ html,
 body {
   height: 100vh;
   margin: 0;
-  background-color: #f1f1f1;
-  color: #1f1f1f;
+  background-color: #2a215a;
+  color: #fefefe;
 }
 
 a {
-  color: #1f1f1f;
+  color: #fefefe;
   text-decoration: none;
 }
 
@@ -27,8 +27,8 @@ a:active {
 
 button {
   background: transparent;
-  border: 1px solid #00ff51;
-  color: #1f1f1f;
+  border: 1px solid #5115ff;
+  color: #fefefe;
   padding: 1em;
   cursor: pointer;
   border-radius: 5px;
@@ -36,10 +36,10 @@ button {
 }
 
 button:hover {
-  box-shadow: 0px 0px 20px 0px transparent;
+  box-shadow: 0px 0px 20px 0px #bd2efc;
   font-weight: 900;
   border: 0;
-  background: radial-gradient(ellipse at top, #00ff51, transparent), radial-gradient(ellipse at bottom, #00ff51, transparent), radial-gradient(ellipse at left, #00ff51, transparent), radial-gradient(ellipse at right, #00ff51, transparent);
+  background: radial-gradient(ellipse at top, #bd2efc, transparent), radial-gradient(ellipse at bottom, #bd2efc, transparent), radial-gradient(ellipse at left, #5115ff, transparent), radial-gradient(ellipse at right, #5115ff, transparent);
 }
 
 button:active {
@@ -66,40 +66,40 @@ button:active {
 
 .centerForm form input {
   text-align: center;
-  background-color: #fefefe;
+  background-color: #140d36;
   font-weight: 700;
   border-radius: 6px;
 }
 
 .centerForm form input[type="submit"] {
-  background-color: #00ff51;
-  color: #1f1f1f;
+  background-color: #bd2efc;
+  color: #fefefe;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ff51, #00ff51);
+  background: linear-gradient(to right, #5115ff, #bd2efc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px transparent;
+  box-shadow: 0px 0px 10px 0px #bd2efc;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .centerForm form input::placeholder {
-  color: #333;
+  color: #544799;
 }
 
 .centerForm form input:hover::placeholder, .centerForm form input:focus::placeholder {
-  color: #1f1f1f;
+  color: #fefefe;
 }
 
 .centerForm form input[type="submit"]:hover, .centerForm form input[type="submit"]:focus-visible {
-  box-shadow: 0px 0px 20px 0px transparent;
+  box-shadow: 0px 0px 20px 0px #bd2efc;
   font-weight: 900;
 }
 
 input,
 select {
-  background-color: #f1f1f1;
-  color: #1f1f1f;
+  background-color: #2a215a;
+  color: #fefefe;
   border: 0;
   font-size: 1em;
   height: 2em;
@@ -108,12 +108,12 @@ select {
 
 input[type="submit"],
 select[type="submit"] {
-  color: #1f1f1f;
-  background-color: #00ff51;
+  color: #fefefe;
+  background-color: #bd2efc;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ff51, #00ff51);
+  background: linear-gradient(to right, #5115ff, #bd2efc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px transparent;
+  box-shadow: 0px 0px 10px 0px #bd2efc;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
@@ -122,12 +122,12 @@ select[type="submit"] {
 input[type="submit"]:hover, input[type="submit"]:focus-visible,
 select[type="submit"]:hover,
 select[type="submit"]:focus-visible {
-  box-shadow: 0px 0px 20px 0px transparent;
+  box-shadow: 0px 0px 20px 0px #bd2efc;
   font-weight: 900;
 }
 
 #search {
-  background-color: #f1f1f1;
+  background-color: #2a215a;
   border-radius: 5px;
   padding: .5em;
   width: 6em;
@@ -148,7 +148,7 @@ header {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 1em;
-  background-color: #fefefe;
+  background-color: #1d1449;
 }
 
 header img {
@@ -170,7 +170,7 @@ header #logBtn #playerName {
 }
 
 header #logBtn #playerCurrency {
-  color: #7e7406;
+  color: #ffd700;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -189,7 +189,7 @@ header .logoTitle {
   gap: 2em;
   margin-top: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #fefefe;
+  background-color: #1d1449;
   border-radius: 16px;
 }
 
@@ -245,7 +245,7 @@ header .logoTitle {
 }
 
 #itemBrowser article {
-  background: #fefefe;
+  background: #140d36;
   border-radius: 16px;
   display: grid;
   gap: 1em;
@@ -290,7 +290,7 @@ header .logoTitle {
 
 #itemBrowser article h1 {
   font-size: 1.5em;
-  color: #1f1f1f;
+  color: #fefefe;
   margin: 0;
 }
 
@@ -308,7 +308,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="2"] {
-  color: #000000;
+  color: #ffffff;
 }
 
 #itemBrowser article h2[rarity="2"]::before {
@@ -316,7 +316,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="3"] {
-  color: #17c200;
+  color: #1eff00;
 }
 
 #itemBrowser article h2[rarity="3"]::before {
@@ -340,7 +340,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="6"] {
-  color: #d76b00;
+  color: #ff8000;
 }
 
 #itemBrowser article h2[rarity="6"]::before {
@@ -348,7 +348,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="7"] {
-  color: #9d7d1f;
+  color: #e6cc80;
 }
 
 #itemBrowser article h2[rarity="7"]::before {
@@ -356,7 +356,7 @@ header .logoTitle {
 }
 
 #itemBrowser article h2[rarity="8"] {
-  color: #00aad5;
+  color: #00ccff;
 }
 
 #itemBrowser article h2[rarity="8"]::before {
@@ -365,9 +365,9 @@ header .logoTitle {
 
 #itemBrowser article h3 {
   font-size: 1em;
-  color: #7e7406;
+  color: #ffd700;
   margin: 0;
-  color: #7e7406;
+  color: #ffd700;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -399,12 +399,12 @@ header .logoTitle {
   align-items: center;
   padding: 0;
   z-index: 999;
-  border: 1px solid #1f1f1f;
+  border: 1px solid #fefefe;
 }
 
 #goTop:hover {
-  background: #00ff51;
-  border: 2px solid #1f1f1f;
+  background: #bd2efc;
+  border: 2px solid #fefefe;
 }
 
 #goTop p {
@@ -453,7 +453,7 @@ header .logoTitle {
 }
 
 .pagination button:disabled {
-  background: #ddd;
+  background: #0f0c29;
   border: 0;
   color: #bbb;
   box-shadow: none;
@@ -465,7 +465,7 @@ header .logoTitle {
   margin-top: 2em;
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #fefefe;
+  background-color: #1d1449;
 }
 
 .myAccount h1 {
@@ -488,7 +488,7 @@ header .logoTitle {
 }
 
 .myAccount nav div .active {
-  background-color: #00ff51;
+  background-color: #5115ff;
 }
 
 .alert {
@@ -500,12 +500,12 @@ header .logoTitle {
   justify-content: center;
   align-items: center;
   z-index: 10000;
-  background-color: #00ff51;
+  background-color: #bd2efc;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ff51, #00ff51);
+  background: linear-gradient(to right, #5115ff, #bd2efc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0px 0px 10px 0px transparent;
-  color: #1f1f1f;
+  box-shadow: 0px 0px 10px 0px #bd2efc;
+  color: #fefefe;
   padding: 6px;
   border: 0;
   cursor: pointer;
